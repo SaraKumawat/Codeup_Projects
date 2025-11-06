@@ -2,19 +2,19 @@
 using namespace std;
 void checkpair(int nums[], int target,int n)
 {
-    bool flag = false;
-    for (int i = 0; i < n; i++)
+    bool flag = false; // set the flag as false
+    for (int i = 0; i < n; i++)  // compare ith element with every j element 
     {
         for (int j = i + 1; j < n; j++)
         {
-            if (nums[i] + nums[j] == target)
+            if (nums[i] + nums[j] == target)  // if ith element + jth element = target 
             {
-                flag = true;
+                flag = true; // we found a pair -> set flag to true
                 break;
             }
         }
     }
-    cout<<flag<<endl;
+    cout<<flag<<endl; // output the flag
 }
 int main()
 {

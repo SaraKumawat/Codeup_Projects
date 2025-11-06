@@ -29,16 +29,18 @@ int main()
     int n;
     cout << "Enter the size of the array : ";
     cin >> n;
-    int nums[n];
+
+    int nums[n]; // array of size n
     for (int i = 0; i < n; i++)
     {
-        cin >> nums[i];
+        cin >> nums[i]; // input elements in the array
     }
+
     int initialEnergy;
     cout << "Enter the initial energy : ";
     cin >> initialEnergy;
 
-    numOfCities(nums,initialEnergy,n);
+    numOfCities(nums,initialEnergy,n); // function call
 
     return 0;
 }
